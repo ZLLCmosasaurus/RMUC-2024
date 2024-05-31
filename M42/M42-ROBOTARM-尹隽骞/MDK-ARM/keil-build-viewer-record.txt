@@ -1,0 +1,76 @@
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+       778          0          0          0        324          0   ak_motor.o
+       658          0          0          0          0          0   ak_motor_bsp.o
+       974          0          0          0          0          0   alg_pid.o
+        74          0          0          0          0          0   alg_smoothen.o
+      1784          0          0          0         36          0   buzzer.o
+       132          0          0          0          0          0   buzzer_bsp.o
+       584          0          0          0         84          0   can.o
+       478          0          0          0          0          0   chassis_communication.o
+       730          0          0          0          0          0   cmsis_os.o
+      1102          0          0          0        212          0   dm_motor.o
+       936          0          0          0          0          0   dm_motor_bsp.o
+       170          0          0          0          0          0   dma.o
+       726          0          0          0        232          0   drv_can.o
+       228          0          0          0          0          0   drv_math.o
+       770          0          0          0       3144          0   drv_uart.o
+      2990          0          4          0        764          0   dvc_djimotor.o
+      1082          0          0          0          0          0   dvc_dr16.o
+       286          0          0          0         32          0   dvc_pump.o
+       284          0          0          0          0          0   dvc_referee.o
+       430          0        205          0        636          0   freertos.o
+       388          0          0          0          0          0   gpio.o
+      1084          0          0          0      25376          0   heap_4.o
+      4948          0          0          0          0          0   joint.o
+       296          0          0          0          0          0   list.o
+       296          0          0          0          0          0   main.o
+      1258          0          4        121         40          0   pathfinder.o
+      1128          0          0          4          5          0   port.o
+      3216          0          0          0          0          0   queue.o
+      9370          0          4         72       1758          0   robotarm.o
+      2684          0          0          0          0          0   robotics.o
+        64          0        392          0      36864          0   startup_stm32f407xx.o
+       158          0          0          5          4          0   stm32f4xx_hal.o
+      3282          0          0          0          0          0   stm32f4xx_hal_can.o
+       384          0          0          0          0          0   stm32f4xx_hal_cortex.o
+      2068          0          8          0          0          0   stm32f4xx_hal_dma.o
+       996          0          0          0          0          0   stm32f4xx_hal_gpio.o
+        88          0          0          0          0          0   stm32f4xx_hal_msp.o
+      4966          0          0          0          0          0   stm32f4xx_hal_pcd.o
+       192          0          0          0          0          0   stm32f4xx_hal_pcd_ex.o
+      2730          0          0          0          0          0   stm32f4xx_hal_rcc.o
+      4184          0          0          0          0          0   stm32f4xx_hal_tim.o
+       306          0          0          0          0          0   stm32f4xx_hal_tim_ex.o
+       240          0          0          0         72          0   stm32f4xx_hal_timebase_tim.o
+      3228          0          0          0          0          0   stm32f4xx_hal_uart.o
+       262          0          0          0          0          0   stm32f4xx_it.o
+      5084          0          0          0          0          0   stm32f4xx_ll_usb.o
+        18          0         24          4          0          0   system_stm32f4xx.o
+      4580          0          5          0        460          0   tasks.o
+       542          0          0          0        144          0   tim.o
+      1384          0          0          0          4          0   tsk_config_and_callback.o
+      1234          0          0          0        696          0   usart.o
+       118          0          0          0        732          0   usb_device.o
+      2506          0          0        136          0          0   usbd_cdc.o
+       302          0          0         20       4096          0   usbd_cdc_if.o
+      1396          0          0          0       1796          0   usbd_conf.o
+      2130          0          0          0          0          0   usbd_core.o
+      3360          0          0          0          1          0   usbd_ctlreq.o
+       572          0         66         76        512          0   usbd_desc.o
+       232          0          0          0          0          0   usbd_ioreq.o
+       118          0          0          0          0          0   utils.o
+       110          0          0          0         16          0   vofa.o
+       636          0       2052          0          0          0   arm_cortexM4lf_math.lib
+Object Totals
+
+Memory Map of the image
+
+	Load Region LR_IROM1 
+
+		Execution Region ER_IROM1 (Exec base: 0x08000000, Size: 0x00018E14, Max: 0x00100000, END)
+
+		Execution Region RW_IRAM1 (Exec base: 0x20000000, Size: 0x00013308, Max: 0x0001C000, END)
+
+		Execution Region RW_IRAM2 (Exec base: 0x2001C000, Size: 0x00000000, Max: 0x00004000, END)
+
+Image component sizes
