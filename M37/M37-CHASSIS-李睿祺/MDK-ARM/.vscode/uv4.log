@@ -1,0 +1,9 @@
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\MDK\ARM\ARMCC\Bin'
+Build target 'infantry'
+compiling chassis_task.c...
+..\APP\chassis_task\chassis_task.c(5): error:  #5: cannot open source input file "referee_cmd.h": No such file or directory
+  #include "referee_cmd.h"
+..\APP\chassis_task\chassis_task.c: 0 warnings, 1 error
+"infantry\infantry.axf" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:04
