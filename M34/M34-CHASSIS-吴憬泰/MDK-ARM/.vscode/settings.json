@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "*.rs": "rust",
+        "pid.h": "c",
+        "fuzzy_pid.h": "c",
+        "fifo.h": "c",
+        "referee.h": "c",
+        "protocol.h": "c",
+        "crc8_crc16.h": "c",
+        "referee_ui.h": "c",
+        "chassis_move.h": "c",
+        "bsp_can.h": "c",
+        "my_init.h": "c",
+        "supercap.h": "c",
+        "chassis_task.h": "c",
+        "offline_check.h": "c",
+        "tim.h": "c",
+        "buzzer.h": "c",
+        "math.h": "c",
+        "bsp_referee.h": "c",
+        "gpio.h": "c",
+        "fsm.h": "c"
+    }
+}

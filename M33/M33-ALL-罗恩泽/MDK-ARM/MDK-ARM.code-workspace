@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "dvc_graphicssendtask.h": "c",
+            "usart.h": "c",
+            "stm32f4xx.h": "c",
+            "crt_chassis.h": "c",
+            "stdint.h": "c"
+        }
+    },
+    "extensions": {}
+}
