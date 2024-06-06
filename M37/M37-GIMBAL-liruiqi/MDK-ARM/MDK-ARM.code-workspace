@@ -4,8 +4,6 @@
             "path": "."
         }
     ],
-    "settings": {
-        "editor.fontSize": 16
-    },
+    "settings": {},
     "extensions": {}
 }

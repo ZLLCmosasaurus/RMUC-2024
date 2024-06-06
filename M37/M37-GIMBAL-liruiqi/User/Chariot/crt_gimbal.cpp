@@ -56,7 +56,6 @@ void Class_Gimbal_Yaw_Motor_GM6020::TIM_PID_PeriodElapsedCallback()
         }
         else
         {
-            PID_Angle.Set_Now(True_Angle_Yaw);
             PID_Omega.Set_Now(True_Gyro_Yaw);
         }
         PID_Omega.TIM_Adjust_PeriodElapsedCallback();
@@ -439,16 +438,25 @@ void Class_Gimbal::Output()
                 }
                 else if(Data_Sign == 1)                     // 导航
                 {
+                    // // 云台工作
+                    // Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
+
+                    // Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw();                      // 设置yaw轴角度
+                    // Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
+
                     // 云台工作
-                    Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
+                    Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
                     Motor_Pitch_LK6010.Set_LK_Motor_Control_Method(LK_Motor_Control_Method_IMU_ANGLE);
 
-                    Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw();                      // 设置yaw轴角度
+                    Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw();                      // 设置yaw轴角度    
                     Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
+                    float Target_Yaw_Omega = MiniPC->Get_Gimbal_Target_Omega();             // 设置yaw角速度
+                    Motor_Yaw.Set_Target_Omega(Target_Yaw_Omega);
+                    
 
-                    Target_Pitch_Angle = Motor_Pitch_LK6010.Get_True_Angle_Pitch()*PI/180;  // 获取pitch轴角度
+                    Target_Pitch_Angle = 0.0f;  // 设置pitch为0°
                     Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad);      // pitch限位
-                    Motor_Pitch_LK6010.Set_Target_Angle(Target_Pitch_Angle);                // 设置pitch轴角度
+                    Motor_Pitch_LK6010.Set_Target_Angle(Target_Pitch_Angle);                // 设置pitch轴角度 
                 }
             }
         }

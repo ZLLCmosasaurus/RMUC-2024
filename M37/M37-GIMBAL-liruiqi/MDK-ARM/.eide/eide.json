@@ -126,6 +126,9 @@
             "path": "../User/Device/dvc_boardc_ist8310.cpp"
           },
           {
+            "path": "../User/Device/dvc_buzzer.c"
+          },
+          {
             "path": "../User/Device/dvc_djimotor.cpp"
           },
           {
@@ -280,9 +283,6 @@
             "name": "Algorithm",
             "files": [
               {
-                "path": "../User/Device/alg_power_limit.cpp"
-              },
-              {
                 "path": "../User/Middleware/Algorithm/alg_filter.cpp"
               },
               {
@@ -293,6 +293,9 @@
               },
               {
                 "path": "../User/Middleware/Algorithm/alg_pid.cpp"
+              },
+              {
+                "path": "../User/Middleware/Algorithm/alg_power_limit.cpp"
               },
               {
                 "path": "../User/Middleware/Algorithm/alg_slope.cpp"
@@ -320,6 +323,9 @@
               },
               {
                 "path": "../User/Middleware/Driver/drv_bsp-boarda.c"
+              },
+              {
+                "path": "../User/Middleware/Driver/drv_buzzer.c"
               },
               {
                 "path": "../User/Middleware/Driver/drv_can.c"

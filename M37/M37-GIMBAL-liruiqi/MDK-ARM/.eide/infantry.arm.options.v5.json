@@ -3,7 +3,7 @@
     "beforeBuildTasks": [],
     "afterBuildTasks": [],
     "global": {
-        "use-microLIB": true,
+        "use-microLIB": false,
         "output-debug-info": "enable"
     },
     "c/cpp-compiler": {
